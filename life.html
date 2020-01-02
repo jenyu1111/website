@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+<style type="text/css">
+.header {
+	float: left;
+	background-image: url(images/483px-Zhang_Ailing_1954.jpg);
+	height: 350px;
+	width: 300px;
+	background-position: 50% 0%;
+	text-align: left;
+	border: 3px dashed #000000;
+}
+.wrapper {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#life2 {
+	position: absolute;
+	left: 424px;
+	top: 373px;
+	background-color: hsla(359,57%,76%,0.83);
+	width: 580px;
+	font-family: "微軟正黑體";
+	font-size: 14pt;
+}
+.main {
+	float: right;
+	height: 350px;
+	width: 812px;
+	font-family: "微軟正黑體";
+	font-size: 18pt;
+	border: 3px solid #000000;
+	background-color: #969696;
+}
+#closed {
+	position: absolute;
+	left: 472px;
+	top: 1px;
+	background-color: hsla(0,13%,75%,0.89);
+	font-family: "微軟正黑體";
+	border-bottom: 3px solid hsla(0,0%,40%,1.00);
+	border-right: 3px solid hsla(0,0%,40%,1.00);
+	width: 115px;
+}
+#open {
+	position: absolute;
+	background-color: hsla(0,13%,75%,0.89);
+	left: 303px;
+	top: 374px;
+	height: 25px;
+	width: 150px;
+	font-family: "微軟正黑體";
+	text-align: center;
+	font-size: 14pt;
+	border-right: 3px solid hsla(0,0%,40%,1.00);
+	border-bottom: 3px solid hsla(0,0%,40%,1.00);
+}
+</style>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function MM_DW_effectBlind(obj,method,effect,dir,speed)
+{
+    obj[method](effect, { direction: dir}, speed);
+}
+function MM_DW_effectDrop(obj,method,effect,dir,speed)
+{
+    obj[method](effect, { direction: dir}, speed);
+}
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="header"> 
+    <p></p>
+  </div>
+  <div class="main">張愛玲，中國文壇的一位傳奇才女，於1920年9月30日出生在上海。本名張煐，後因入學需要，母親黃逸梵以英文名Eileen譯音，易名愛玲。
+張愛玲家世顯赫，曾就讀聖約翰大學和香港大學，受過良好的中西教育。 
+張愛玲在二十歲時便以一系列的小說震動文壇，是四十年代上海最紅的女作家。五十年代，張愛玲已完成她最主要的創作，包括 《傾城之戀》 、《金銷記》、《赤地之戀》 、《半生緣》 等等。
+張愛玲一生見證了中國近現代史，漂泊於天津、上海、香港、美國各地，最後在美國定居，並於1960年取得美國國籍。早在之前，1956年時，張愛玲就已經和大自己29歲的德裔美國人賴雅結婚，賴雅逝世後，張愛玲在美國終老，1995年9月8日，因為動脈硬化心血管病去世於美國加州洛杉磯市西木區羅徹斯特大道的公寓，享壽74歲。
+</div>
+  <div id="life2"> 1920年9月30日 出生於上海，原名張瑛<br>
+1922年 遷居天津<br>
+1928年 由天津搬回上海，讀《紅樓夢》和《三國演義》<br>
+1930年 改名張愛玲<br>
+1939年 考進香港大學<br>
+1941年 太平洋戰爭爆發，投入文學創作。兩年後，發表《傾城之戀》和《金鎖記》等作品，並結識周瘦鵑、柯靈、蘇青和胡蘭成<br>
+1944年 與胡蘭成結婚<br>
+1945年 自編《傾城之戀》在上海公演；同年，抗戰勝利<br>
+1947年 與胡蘭成離婚<br>
+1952年 移居香港<br>
+1955年 離港赴美，並拜訪胡適<br>
+1956年 結識劇作家賴雅，同年八月，在紐約與賴雅結婚<br>
+1967年 賴雅去世<br>
+1973年 定居洛杉磯；兩年後，完成英譯清代長篇小說《海上花列傳》<br>
+1995年9月 逝於洛杉磯公寓，享年七十四歲<br>
+<div id="closed" onClick="MM_DW_effectBlind($('#life2'),'hide','blind','up',2000)">關閉生平年表</div>
+  </div>
+  <div id="open" onClick="MM_DW_effectDrop($('#life2'),'show','drop','up',1500)">張愛玲生平年表</div>
+<p>&nbsp;</p>
+</div>
+</body>
+</html>
